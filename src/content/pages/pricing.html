@@ -1,27 +1,28 @@
----
-title: 'Reviews'
+--- 
+title: 'Pricing'
 description: 'Meta description for the page'
 preloadImg: '/assets/images/cabinets2.jpg'
-permalink: 'reviews/'
+permalink: 'pricing/'
 eleventyNavigation:
-    key: Reviews
-    order: 400
+    key: Pricing 
+    order: 300 
 ---
 
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/css/reviews.css">
+    <link rel="stylesheet" href="/css/pricing.css">
+    <script defer="defer" src="/assets/js/pricing.js"></script>
 {% endblock %}
 
 {% block body %}
 
     <!-- ============================================ -->
-    <!--                    LANDING                   -->
+    <!-- LANDING -->
     <!-- ============================================ -->
 
     <section id="int-hero">
-        <h1 id="home-h">Our Reviews</h1>
+        <h1 id="home-h">Pricing</h1>
         <picture class="cs-picture">
             <source media="(max-width: 600px)" srcset="/assets/images/landing-m.webp">
             <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg">
@@ -30,12 +31,12 @@ eleventyNavigation:
     </section>
 
     <!-- ============================================ -->
-    <!--                  Reviews                     -->
+    <!-- Reviews -->
     <!-- ============================================ -->
 
-    <section id="reviews">
+    <section id="products">
         <div class="container">
-            <div class="review">
+            {# <div class="review">
                 <picture>
                     <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
                 </picture>
@@ -118,10 +119,96 @@ eleventyNavigation:
                         <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
                     </picture>
                 </div>
+            </div> #}
+
+            <h2>Advanced human focused hosting for Every Pocket</h2>
+
+            <div class="pricing-toggle-container">
+                <input type="radio" name="pricing" id="monthly" value="monthly" checked="checked">
+                <input type="radio" name="pricing" id="yearly" value="yearly">
+
+                <label for="monthly">monthly</label>
+                <label for="yearly">yearly</label>
+
+                <span class="highlighter"></span>
+            </div>
+
+            <div class="pricing-options-container">
+                <div class="pricing-option starter-option">
+                    <h3>Starter</h3>
+                    <p class="price">R349.00</p>
+                    <p>Ideal for bloggers and small businesses just starting their online journey.</p>
+
+                    <ul>
+                        <li>Monthly Backups & Restore</li>
+                        <li>Manual Security Checks
+                        </li>
+                        <li>WordPress Email Support</li>
+                        <li>Reports on Request</li>
+                        <li>Free website migration
+                        </li>
+                        <li>30 Day Guarantee</li>
+                    </ul>
+
+                    <button>Get started</button>
+                </div>
+
+                <div class="pricing-option business-option">
+                    <h3>Business</h3>
+                    <p class="price">R499.00</p>
+                    <p>Perfect for growing businesses, this plan includes enhanced performance, more resources, and advanced tools to elevate your website’s performance and reach.</p>
+
+                    <ul>
+                        <li>Monthly Backups & Restore</li>
+                        <li>Malware Virus Removal
+                        </li>
+                        <li>WordPress Core Updates</li>
+                        <li>WordPress Theme Update</li>
+                        <li>Security Protection
+                        </li>
+                        <li>Monthly Reports</li>
+                    </ul>
+
+                    <button>Get started</button>
+                </div>
+
+                <div class="pricing-option pro-option">
+                    <h3>Pro</h3>
+                    <p class="price">R749.00</p>
+                    <p>Tailored for online stores, this plan provides the power and scalability required to handle high traffic, transactions, and product listings without a hitch.</p>
+
+                    <ul>
+                        <li>Business Plan Included</li>
+                        <li>WooCommerce Support
+                        </li>
+                        <li>Manual Plugin Updates</li>
+                        <li>Weekly Reports</li>
+                        <li>Free website migration
+                        </li>
+                        <li>30 Day Guarantee</li>
+                    </ul>
+
+                    <button>Get started</button>
+                </div>
+
+            </div>
+
+            <div class="custom-option-container">
+                <h2>Custom WordPress Development for your Business
+                </h2>
+
+                <div class="custom-option">
+                    <h3>Custom WordPress Development</h3>
+
+                    <p>Starting from R10000 once off</p>
+
+                    <p>Unleash the full potential of WordPress with our bespoke development services. Whether it’s a unique theme, a feature-rich plugin, or a comprehensive website, we turn your ideas into reality.your website should look flawless on any device. Our responsive design approach ensures that your site adapts and performs perfectly on screens of all sizes.</p>
+                    <button>Get started</button>
+                </div>
             </div>
         </div>
     </section>
 
-    {% include 'components/cta.html' %}
+    {# {% include 'components/cta.html' %} #}
 
 {% endblock %}

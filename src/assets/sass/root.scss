@@ -8,9 +8,9 @@
 @media only screen and (min-width: 0em) {
 	// Website colors
 	:root {
-		--primary: #ffba19;
+		--primary: rgb(19, 145, 155);
 		--primaryLight: #ffd675;
-		--secondary: #001f3f;
+		--secondary: rgb(19, 52, 83);
 		--secondaryLight: #001f3f;
 		--headerColor: #1a1a1a;
 		--bodyTextColor: #4e4b66;
@@ -19,7 +19,7 @@
 		/* 13px - 16px */
 		--topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
 		/* 31px - 49px */
-		--headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+		--headerFontSize: clamp(1.9375rem, 4.2vw, 3.5rem);
 		--bodyFontSize: 1rem;
 
 		/* 60px - 100px top and bottom */
@@ -71,7 +71,7 @@
 		background-color: var(--primary);
 
 		// Transition Properties
-		color: #000;
+		color: #fff;
 		transition: color 0.3s;
 		transition-delay: 0.1s;
 
@@ -756,7 +756,7 @@
 			max-width: calc(1280 / 16 * 1rem);
 			margin: auto;
 			display: flex;
-			justify-content: flex-end;
+			justify-content: space-around;
 			align-items: center;
 			gap: calc(24 / 16 * 1rem);
 		}
@@ -770,7 +770,7 @@
 			max-width: calc(350 / 16 * 1rem);
 			height: calc(65 / 16 * 1rem);
 			/* margin-right auto pushes everything away from it to the right */
-			margin: 0 auto 0 0;
+			// margin: 0 auto 0 0;
 			padding: 0;
 			display: flex;
 			justify-content: center;
@@ -967,7 +967,7 @@
 @media only screen and (min-width: 0em) {
 	#cta {
 		position: relative;
-		padding: calc(50 / 16 * 1rem) 0;
+		 padding: calc(50 / 16 * 1rem) 0;
 
 		&:before {
 			content: "";
@@ -975,8 +975,8 @@
 			display: block;
 			height: 100%;
 			width: 100%;
-			background: #000;
-			opacity: 0.7;
+			background: var(--primary);
+			opacity: 1;
 			top: 0;
 			left: 0;
 			z-index: -1;
@@ -984,6 +984,10 @@
 
 		.container {
 			text-align: center;
+
+			.cs-button-solid {
+				background-color: var(--secondary);
+			}
 		}
 
 		picture {
@@ -1029,7 +1033,7 @@
 /* Small Desktop */
 @media only screen and (min-width: 64em) {
 	#cta {
-		padding: calc(168 / 16 * 1rem) 0;
+		padding: calc(90 / 16 * 1rem) 0;
 	}
 }
 
@@ -1038,9 +1042,9 @@
 	#cta {
 		position: relative;
 		margin-top: calc(100 / 16 * 1rem);
-		&:before {
-			display: none;
-		}
+		// &:before {
+		// 	display: none;
+		// }
 		&:after {
 			content: "";
 			position: absolute;

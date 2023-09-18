@@ -1,7 +1,7 @@
----
+--- 
 title: 'Contact'
 description: 'Meta description for the page'
-preloadImg: '/assets/images/cabinets2.jpg'
+preloadImg: '/assets/images/cabinets2.jpg' 
 permalink: 'contact/'
 ---
 
@@ -14,7 +14,7 @@ permalink: 'contact/'
 {% block body %}
 
     <!-- ============================================ -->
-    <!--                    LANDING                   -->
+    <!-- LANDING -->
     <!-- ============================================ -->
 
     <section id="int-hero">
@@ -27,7 +27,7 @@ permalink: 'contact/'
     </section>
 
     <!-- ============================================ -->
-    <!--                Contact Form                  -->
+    <!-- Contact Form -->
     <!-- ============================================ -->
 
     <section id="cs-contact">
@@ -42,15 +42,15 @@ permalink: 'contact/'
                 </div>
                 <label>
                     Name
-                    <input required type="text" id="name" name="name" placeholder="Name">
+                    <input required="required" type="text" id="name" name="name" placeholder="Name">
                 </label>
                 <label>
                     Email
-                    <input required type="text" id="email" name="email" placeholder="Email">
+                    <input required="required" type="text" id="email" name="email" placeholder="Email">
                 </label>
                 <label>
                     Phone
-                    <input required type="text" id="phone" name="phone" placeholder="Phone">
+                    <input required="required" type="text" id="phone" name="phone" placeholder="Phone">
                 </label>
                 <label>
                     How Did You Find Us
@@ -58,7 +58,7 @@ permalink: 'contact/'
                 </label>
                 <label class="cs-label-message">
                     Message
-                    <textarea required name="Message" id="message" placeholder="Write message..."></textarea>
+                    <textarea required="required" name="Message" id="message" placeholder="Write message..."></textarea>
                 </label>
                 <button class="cs-button-solid" type="submit">Submit Message</button>
             </form>
@@ -73,9 +73,9 @@ permalink: 'contact/'
                 <span class="cs-header">Address</span>
                 <a class="cs-link" href="{{client.address.mapLink}}">
                     {{client.address.lineOne}},
-                    <br />
+                    <br/>
                     {{client.address.lineTwo}},
-                    <br />
+                    <br/>
                     <span class="cs-block">
                         {{client.address.city}}
                         {{client.address.state}}
