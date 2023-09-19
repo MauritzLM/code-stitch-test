@@ -1,7 +1,7 @@
 ---
 title: 'About'
 description: 'Meta description for the page'
-preloadImg: '/assets/images/cabinets2.jpg'
+preloadImg: '/assets/images/story.jpg'
 permalink: 'about/'
 eleventyNavigation:
     key: About Us
@@ -16,7 +16,7 @@ eleventyNavigation:
 
 {% block body %}
     <!-- ============================================ -->
-    <!--                    LANDING                   -->
+    <!-- LANDING -->
     <!-- ============================================ -->
 
     <section id="int-hero">
@@ -30,33 +30,33 @@ eleventyNavigation:
     </section>
 
     <!-- ============================================ -->
-    <!--                 Side By Side                 -->
+    <!-- Side By Side -->
     <!-- ============================================ -->
 
-    <section id="sbs">
+    <section id="our-story">
         <div class="cs-container">
             <!-- Left Image Section -->
             <div class="cs-left">
                 <picture class="cs-picture cs-picture1">
-                    <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-                    <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" loading="lazy" width="400" height="563">
+                    <source media="(max-width: 600px)" srcset="/assets/images/story.png">
+                    <source media="(min-width: 601px)" srcset="/assets/images/story.png">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/story.png" alt="story" loading="lazy" width="400" height="563">
                 </picture>
-                <picture class="cs-picture cs-picture2">
+                {# <picture class="cs-picture cs-picture2">
                     <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
                     <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
                     <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="563">
-                </picture>
+                </picture> #}
             </div>
             <!-- Right Content Section-->
             <div class="cs-right">
                 <span class="cs-topper">About Us</span>
-                <h2 class="cs-title">About Company Title</h2>
+                <h2 class="cs-title">Our Story</h2>
                 <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
+                    At DirectWeb, our journey began with a simple yet powerful idea: to empower individuals and businesses to unlock the full potential of the web. Founded by a team of passionate technophiles, we saw a need for WordPress hosting services that not only met the highest standards of performance and security but also catered to the diverse needs of our clients.
                 </p>
                 <p class="cs-text">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
+                    Over the years, we’ve evolved from a startup dream to a leading player in the WordPress hosting arena. Our story is one of relentless innovation, customer-centric values, and a genuine passion for all things WordPress. We’ve grown, but our commitment to excellence remains unwavering.
                 </p>
                 <div class="cs-flex-group">
                     <p class="cs-flex-p">
@@ -67,6 +67,67 @@ eleventyNavigation:
                     <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
                 </div>
                 <a href="/projects" class="cs-button-solid">Our Projects</a>
+            </div>
+        </div>
+    </section>
+
+    {# Our mission #}
+    <section id="our-mission">
+        <div class="cs-container">
+            <!-- Left Image Section -->
+            <div class="cs-left">
+                <picture class="cs-picture cs-picture1">
+                    <source media="(max-width: 600px)" srcset="/assets/images/mission.png">
+                    <source media="(min-width: 601px)" srcset="/assets/images/mission.png">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/mission.png" alt="cabinets" loading="lazy" width="400" height="563">
+                </picture>
+                {# <picture class="cs-picture cs-picture2">
+                    <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
+                    <source media="(min-width: 601px)" srcset="/assets/images/construction.jpg">
+                    <img aria-hidden="true" decoding="async" src="/assets/images/construction.jpg" alt="house" loading="lazy" width="400" height="563">
+                </picture> #}
+            </div>
+            <!-- Right Content Section-->
+            <div class="cs-right">
+                <span class="cs-topper">About Us</span>
+                <h2 class="cs-title">Our Mission</h2>
+                <p class="cs-text">
+                    Our mission at DirectWeb is simple yet profound: to provide a platform that enables your online ambitions to soar. Whether you’re a blogger, an entrepreneur, or a creative professional, we are committed to offering hosting solutions that empower you to make your mark on the digital landscape.
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+    {# Why us #}
+    <section id="why-us">
+        <h2 class="cs-title">Why Us</h2>
+        <p class="cs-text">At the heart of our business lies a set of core principles that define who we are and what we stand for
+        </p>
+
+        <div class="cs-container">
+            <div>
+                <p class="cs-text">
+                    <strong>Customer-Centric Approach:</strong>
+                    Your success is our success. We are committed to understanding your unique needs and providing tailored solutions that help you achieve your online goals.</p>
+            </div>
+
+            <div>
+                <p class="cs-text">
+                    <strong>Innovation and Performance:</strong>
+                    The web is ever-evolving, and so are we. We stay at the forefront of technological advancements to offer you hosting services that are not only reliable but also lightning-fast, giving your website visitors an unforgettable experience.</p>
+            </div>
+
+            <div>
+                <p class="cs-text">
+                    <strong>Technical Expertise:</strong>
+                    Our team of seasoned WordPress experts is dedicated to providing the highest level of technical know-how. Whether you’re a beginner or an advanced user, we’re here to support you every step of the way.</p>
+            </div>
+
+            <div>
+                <p class="cs-text">
+                    <strong>Transparency and Trust:</strong>
+                    We believe in building lasting relationships based on transparency and trust. You can rely on us to deliver what we promise, with no hidden surprises.</p>
             </div>
         </div>
     </section>

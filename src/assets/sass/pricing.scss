@@ -7,7 +7,7 @@
 /* Mobile */
 @media only screen and (min-width: 0em) {
 	#products {
-		padding-top: calc(120 / 16 * 1rem);
+		padding-top: 4em;
 		padding-bottom: calc(50 / 16 * 1rem);
 		margin: auto;
 		text-align: center;
@@ -15,6 +15,9 @@
 		.container {
 			width: 96%;
 			max-width: calc(1320 / 16 * 1rem);
+			display: flex;
+			align-items: center;
+			flex-direction: column;
 		}
 
 		.review {
@@ -29,6 +32,7 @@
 			background: #fff;
 			display: flex;
 			flex-direction: column;
+			
 
 			&:last-of-type {
 				margin-bottom: 0;
@@ -94,12 +98,11 @@
 	align-self: center;
 	border: 1.5px solid rgba(194, 191, 191, 0.692);
 	border-radius: 5px;
-	padding: 1em;
 	display: inline-flex;
 	position: relative;
 	justify-content: center;
 	gap: 3em;
-    margin-top: 2em;
+	margin-top: 2em;
 
 	input[type='radio'] {
 		position: absolute;
@@ -131,16 +134,17 @@
 		/* font-size: 1.7rem; */
 		/* font-weight: bold; */
 		text-transform: capitalize;
+		padding: 1em;
 	}
 
 	label[for='monthly'] {
 		position: relative;
-		right: 4px;
+		left: 8px;
 	}
 
 	label[for='yearly'] {
 		position: relative;
-		right: 4px;
+		right: 17px;
 	}
 
 	.highlighter {
@@ -160,23 +164,22 @@
 	padding: 1em;
 	display: grid;
 	grid-template-columns: 1fr;
-
 	gap: 1em;
 
 	.pricing-option {
 		// text-align: center;
-		// border: 1px solid rgba(44, 176, 188, 0.363);
+		border: 1px solid rgba(44, 176, 188, 0.363);
 		// border-radius: 5px;
 		// max-width: 400px;
 		// display: grid;
 		// grid-template-columns: 1fr;
 		// grid-template-rows: .2fr .4fr .5fr 1fr .5fr;
 
-		padding: calc(64 / 16 * 1rem) calc(30 / 16 * 1rem) calc(18 / 16 * 1rem) calc(30 / 16 * 1rem);
+		padding: 2em;
 		box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
 		width: 100%;
 		max-width: calc(410 / 16 * 1rem);
-		margin: auto;
+		// margin: auto;
 		// margin-bottom: calc(100 / 16 * 1rem);
 		border-radius: calc(5 / 16 * 1rem);
 		position: relative;
@@ -184,6 +187,19 @@
 		display: flex;
 		flex-direction: column;
 		gap: 1em;
+	
+		justify-content: space-between;
+		align-items: center;
+
+		p {
+			line-height: 24/18;
+			margin-bottom: calc(28 / 16 * 1rem);
+			text-align: left;
+		}
+
+		a {
+			width: 90%;
+		}
 
 		h3 {
 			margin: 0;
@@ -196,12 +212,12 @@
 			align-self: center;
 		}
 
-		button {
-			width: 90%;
-			height: 50px;
-			justify-self: center;
-			align-self: flex-end;
-		}
+		//  a{
+		//  	width: 90%;
+		//  	 height: 50px;
+		//  	// justify-self: center;
+		//  	// align-self: flex-end;
+		//  }
 
 		ul {
 			text-align: left;
@@ -220,36 +236,40 @@
 .pricing-options-container,
 .custom-option-container {
 	padding: 1em;
-	max-width: 1200px;
+	// max-width: 1200px;
 }
 
 .custom-option {
-	padding: 1em;
 	text-align: center;
 	border: 1px solid rgba(44, 176, 188, 0.363);
 	border-radius: 5px;
+	padding: 2em;
+	box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
+	width: 100%;
+	// max-width: calc(410 / 16 * 1rem);
+	margin: auto;
+	// margin-bottom: calc(100 / 16 * 1rem);
+	border-radius: calc(5 / 16 * 1rem);
+	position: relative;
+	background: #fff;
+	margin-top: 2em;
+
 }
 
 /* Media queries */
-@media screen and (min-width: 999px) {
-	.pricing-options-container {
-		grid-template-columns: 1fr 1fr 1fr;
-	}
-}
 
 /* Tablet */
 @media only screen and (min-width: 48em) {
-	#reviews {
-		padding-top: calc(150 / 16 * 1rem);
+	#products {
+		// padding-top: calc(150 / 16 * 1rem);
 		padding-bottom: calc(50 / 16 * 1rem);
 
 		.container {
-			font-size: min(1.4vw, 1em);
-			display: flex;
-			justify-content: center;
-			flex-wrap: wrap;
+			// font-size: min(1.4vw, 1em);
+			
 			padding: 0;
 			column-gap: calc(30 / 16 * 1rem);
+			gap: 1em;
 		}
 
 		.review {
@@ -263,11 +283,18 @@
 	}
 }
 
+@media screen and (min-width: 1139px) {
+	.pricing-options-container {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+
+
 /* Dark Mode */
 @media only screen and (min-width: 0em) {
 	body.dark-mode {
-		#reviews {
-			.review {
+		#products {
+			.pricing-option, .custom-option {
 				background: var(--medium);
 
 				.name {
